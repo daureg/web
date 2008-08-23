@@ -1,9 +1,3 @@
-<?php header("Vary: Accept");
-header("X-Hacker: It will be better for you to read Shakespeare than HTTP headers");
-if (stristr($_SERVER["HTTP_ACCEPT"], "application/xhtml+xml")) 
-    header("Content-Type: application/xhtml+xml; charset=utf-8");
-else
-    header("Content-Type: text/html; charset=utf-8");?>
 <?php include_once("../../common/title"); ?>
 GeraudSoft | Arma Jactare
 <?php include_once("../../common/head"); ?>
