@@ -2,14 +2,13 @@
 <meta name="author" content="Géraud LE FALHER" />
 <meta name="revisit-after" content="7 days" />
 <meta name="copyright" content="Cette création est mise à disposition selon le Contrat Paternité-Pas d'Utilisation Commerciale-Partage des Conditions Initiales à l'Identique 2.0 France" />
-<meta name="publisher" content="Géraud LE FALHER" />
+<meta name="publisher" content="Géraud Le Falher" />
 <meta name="category" content="software" />
-<meta name="generator" content="vim 7.1.293"/>
 <meta name="robots" content="All" />    
 <meta name="distribution" content="global" />
 <meta name="Rating" content="General" />    
 <meta http-equiv="content-type" content="application/xhtml+xml;charset=utf-8" />
 <link rel="shortcut icon" type="image/ico" href="http://geraudsoft.info/common/favicon.ico" />
 <link rel="icon" type="image/ico" href="http://geraudsoft.info/common/favicon.ico" />
-<link href="http://geraudsoft.info/common/<?php echo (!$sitestyle)?'defaut':$sitestyle ?>.css" rel="stylesheet" media="screen" type="text/css" title="Style défini par l'utilisateur" />
+<link href="http://geraudsoft.info/common/defaut.css" rel="stylesheet" media="screen" type="text/css" title="Couleurs par défaut" />
 <link href="http://geraudsoft.info/common/base_print.css" rel="stylesheet" type="text/css" media="print" title="Impression normal" />
