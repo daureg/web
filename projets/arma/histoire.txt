@@ -1,0 +1,33 @@
+Notes sur Arma Jactare
+Géraud Le Falher
+18 juillet 2007
+1 Contexte
+2042, l'humanité vit dans la nostalgie des années insouciantes du début
+de ce siècle, avant l'apparition en 2009 de la sinistre ARB (Autorité de Ré-
+gulation des Brevets). Certes la notion de brevet lui est antérieur, mais sous
+la pression des grandes firmes internationales, elle a été étendue au delà de
+toutes mesures : les inventions (bien évidemment), mais aussi les connaissances
+(formules mathématiques, théorèmes, algorithmes, brevets logiciels),
+le génome humain, que se partagent les grands groupes pharmaceutiques,
+l'alimentation, avec les OGM très productifs mais hors de prix, les langues
+humaines, sous l'appellation charmante : "B1023-4533 : modulations sonores
+applicable à l'échange d'informations basse densité multicast" et même les
+les habitudes et les coutumes ("B992-3256 : Schémas comportementales ré-
+currents, vecteur d'information sur l'origine ou l'appartenance à un groupe
+multi-entités vivantes"). Les inspecteurs de l'ARB sillonnent la planète à la
+recherche de fraudeurs qui auraient omis de payés les royalties sur la parole, la
+multiplication, le gène du diabète ou sur les carottes vertes hyper-vitaminées.
+Mais durant tous ce temps, le monde industrialisé, trop occuper à s'autodé-
+truire, a fermé les yeux sur ce continent insolvable, ravagé par les épidémies,
+la famine, la sécheresse et la guerre, l'Afrique. Et c'est là que ce sont réunis
+les opposants de tous les pays, avec leurs armes et leurs idéaux, sous le nom
+de GPL (Groupe Pour la Liberté).
+2 Histoire ?
+Les six personnages sont ensembles, ils doivent défendre leur territoire et
+partir attaquer les bases de l'ARB.
+Pareil, mais trois persos trahissent pour l'ARB et les autres les traquent.
+Certains sont pour l'ARB, les autres non, et il se battent entre eux.
+Ce sont des mercenaires de l'ARB mais le GPL leur parle d'un fabuleux
+trésors.
+Ce sont des soldats génétiquement modifiés pour détruire le GPL
+D'autres idées... ?

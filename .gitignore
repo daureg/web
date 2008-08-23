@@ -1,0 +1,12 @@
+style/
+*.7z
+*.tar.*
+*.zip
+*.tex
+sitemap_gen.py
+config.xml
+google*.html
+common/gen.py
+about/*_log
+bzr/
+.bzr*

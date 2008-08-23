@@ -1,0 +1,20 @@
+# Contributor : Geraud Le Falher <daureg@gmail.com>
+
+pkgname=ogre-tuto
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Ogre Tutorial basic implementation"
+url="http://geraudsoft.info/"
+license=('GPL')
+arch=('i686')
+source=(http://geraudsoft.info/ogre/projets/$pkgname-$pkgver.tar.bz2)
+groups=('test')
+depends=( 'ogre' )
+makedepends=( 'gcc' 'scons' )
+
+build() {
+	cd $startdir/src/$pkgname-$pkgver
+  scons Prefix=/usr BuildType=release Arch=pentium4 GUI=yes DESTDIR=$startdir/pkg install
+}
+# vim: set ft=sh ts=2 sw=2 et:
+md5sums=('ab854f00cb6150cc8dd2aa5a3dd43366')

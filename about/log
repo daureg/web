@@ -1,0 +1,364 @@
+  120 Geraud Le Falher	2008-06-23
+      nouvelle du 23 juin 2008
+
+  119 Geraud Le Falher	2008-06-23
+      suppression de for dans le label pour changer de style
+
+  118 Geraud Le Falher	2008-06-23
+      ajout de liens standards vers les deux nouvelles
+
+  117 Geraud Le Falher	2008-06-23
+      Nouvelle version de immor
+
+  116 Geraud Le Falher	2008-06-23
+      Ajout des fichiers pour féerie
+
+  115 Geraud Le Falher	2008-06-11
+      ignore le fichier de log
+
+  114 Geraud Le Falher	2008-05-18
+      ne versionne pas about/log
+
+  113 Geraud Le Falher	2008-05-18
+      nouvelle sitemap
+
+  112 Geraud Le Falher	2008-05-18
+      taille de la barre de liens dans tous les styles
+
+  111 Geraud Le Falher	2008-05-18
+      about : liens changelog, del.icio.us et google reader
+
+  110 Geraud Le Falher	2008-05-18
+      ajout du changelog bzr
+
+  109 Geraud Le Falher	2008-05-18
+      ajout d'une page personnel pour l'erreur 404
+
+  108 Geraud Le Falher	2008-05-17
+      ajout d'une liste de lien au début de chaques pages
+
+  107 Geraud Le Falher	2008-05-17
+      renommer .py vers .python
+
+  106 Geraud Le Falher	2008-05-17
+      typo
+
+  105 Geraud Le Falher	2008-05-17
+      Ajout d'une page d'accueil minimale pour common (evite les erreurs 403)
+
+  104 Geraud Le Falher	2008-05-17
+      typo dans les css
+
+  103 Geraud Le Falher	2008-05-04
+      nouvelle du 4 mai
+
+  102 Geraud Le Falher	2008-05-04
+      importation de main.css dans chaque feuille de style et suppression du lien vers elle
+      nouvelle feuille d'impression
+
+  101 Geraud Le Falher	2008-05-04
+      ajout du projet sitemap2map
+
+  100 Geraud Le Falher	2008-05-04
+      mise a jour sitemap
+
+   99 Geraud Le Falher	2008-05-04
+      ajout d'un plan du site
+
+   98 Geraud Le Falher	2008-05-04
+      suppression des vieux fichiers templates
+
+   97 Geraud Le Falher	2008-05-04
+      ajout d'un lien vers le plan du site dans le menu
+
+   96 Geraud Le Falher	2008-05-04
+      nouvelle classe p.credit
+
+   95 Geraud Le Falher	2008-05-04
+      Correction des titres pour l'affichage du plan
+
+   94 Geraud Le Falher	2008-05-04
+      nouvelle classe de liste pour le plan du site
+
+   93 Geraud Le Falher	2008-05-04
+      typo
+
+   92 Geraud Le Falher	2008-05-03
+      le selecteur de couleur marche sous IE
+
+   91 Geraud Le Falher	2008-05-01
+      espace les news
+
+   90 Geraud Le Falher	2008-05-01
+      mise a jour de la sitemap
+
+   89 Geraud Le Falher	2008-05-01
+      utilise la classe news sur la premiere page
+
+   88 Geraud Le Falher	2008-05-01
+      Modification pour permettre le changement de style et annonce sur la premiere page
+
+   87 Geraud Le Falher	2008-05-01
+      ajout de plus d'element a la liste
+
+   86 Geraud Le Falher	2008-05-01
+      changement de lien dans ecrits (lien avec les noms)
+
+   85 Geraud Le Falher	2008-05-01
+      Ajout d'un script pour changer de style a la volee
+
+   84 Geraud Le Falher	2008-05-01
+      reorganisation de ecrits
+
+   83 Geraud Le Falher	2008-05-01
+      Convertit toutes les pages a la nouvelle structure du site
+
+   82 Geraud Le Falher	2008-05-01
+      correction de la troisieme miniature de xfce
+
+   81 Geraud Le Falher	2008-05-01
+      convertit la capture d'ogre de png en jpg
+
+   80 Geraud Le Falher	2008-05-01
+      nouveau template du site
+
+   79 Geraud Le Falher	2008-05-01
+      Feuilles de style plus simple, classe 'center'
+
+   78 Geraud Le Falher	2008-05-01
+      Ajout d'un fichier robots.txt vide
+
+   77 Geraud Le Falher	2008-04-27
+      correction d'un lien
+
+   76 Geraud Le Falher	2008-04-27
+      Utilise une capture d'écran d'ogre en jpg
+
+   75 Geraud Le Falher	2008-04-27
+      meilleur sitemap
+
+   74 Geraud Le Falher	2008-04-27
+      encore un allegement de defaut.css
+
+   73 Geraud Le Falher	2008-04-27
+      ajout de la feuille de style old.css
+
+   72 Geraud Le Falher	2008-04-27
+      suppression des bordures autour des images
+
+   71 Geraud Le Falher	2008-04-27
+      feuille de style aux couleurs dark tango
+
+   70 Geraud Le Falher	2008-04-27
+      feuille de style reprenant les anciennes couleurs
+
+   69 Geraud Le Falher	2008-04-27
+      common/noir.css => common/dark_tango.css
+
+   68 Geraud Le Falher	2008-04-27
+      Lien vers les nouvelles feuilles de style
+
+   67 Geraud Le Falher	2008-04-27
+      Ajout d'une feuille de style a fort contraste
+
+   66 Geraud Le Falher	2008-04-27
+      Suppression des elements inutiles dans les deux feuilles (main et defaut)
+
+   65 Geraud Le Falher	2008-04-27
+      nouvelle class (fait, wip, titre nouv, vertical-space)
+
+   64 Geraud Le Falher	2008-04-27
+      Nouveau fichier qui contient la liste de les element stylables
+
+   63 Geraud Le Falher	2008-04-27
+      nouvelle class h2.nouv
+
+   62 Geraud Le Falher	2008-04-27
+      correction des liens vers les nouvelles versions d'immortalite
+
+   61 Geraud Le Falher	2008-04-27
+      remplacer les versions texte, pdf et htm de immortalite par celle generees
+      par les scripts sed.
+
+   60 Geraud Le Falher	2008-04-26
+      Convertit pour utiliser le nouveau style
+
+   59 Geraud Le Falher	2008-04-26
+      les citations en italique
+
+   58 Geraud Le Falher	2008-04-26
+      Import des nouvelles feuilles de styles
+
+   57 Geraud Le Falher	2008-04-26
+      Nouvelles parties de template pour utiliser le nouveau style et license CC
+
+   56 Geraud Le Falher	2008-04-26
+      ignore des trucs de google
+
+   55 Geraud Le Falher	2008-04-26
+      mise en page, copyright CC 
+
+   54 Geraud Le Falher	2008-04-26
+      Ajout d'un sitemap au format google
+
+   53 Geraud Le Falher	2008-04-26
+      mention de prochain paragraphes pour feerie
+
+   52 Geraud Le Falher	2008-04-26
+      taille du pdf du livre
+
+   51 Geraud Le Falher	2008-04-26
+      paragraphe light sans lettrine
+
+   50 Geraud Le Falher	2008-04-26
+      ignore le supprime repertoire style
+
+   49 Geraud Le Falher	2008-04-26
+      Suppresion du répertoire style (test non versionnes)
+
+   48 Geraud Le Falher	2008-04-24
+      nouvelle du 24 avril 2008
+
+   47 Geraud Le Falher	2008-04-24
+      correction des liens
+
+   46 Geraud Le Falher	2008-04-24
+      page de résumé des projets
+
+   45 Geraud Le Falher	2008-04-24
+      Lien vers le debut du livre en pdf
+
+   44 Geraud Le Falher	2008-04-24
+      ajout du livre 'menaces' en pdf
+
+   43 Geraud Le Falher	2008-04-24
+      Ajout du premier paragraphe de la deuxième nouvelle
+
+   42 Geraud Le Falher	2008-04-24
+      upload de feerie.jpg
+
+   41 Geraud Le Falher	2008-04-24
+      meilleur description, utilisation de vertical-space
+
+   40 Geraud Le Falher	2008-04-24
+      lien vers nouvelle 2, mise en page
+
+   39 Geraud Le Falher	2008-04-24
+      bon lien vers ecrits
+
+   38 Geraud Le Falher	2008-04-24
+      Nouvelle maniere de centre et separateur vertical
+
+   37 Geraud Le Falher	2008-04-24
+      suppression du lien vers les archives dans le menu
+
+   36 Geraud Le Falher	2008-04-24
+      Correction du chemin relatif vers le dossier common
+
+   35 Geraud Le Falher	2008-04-24
+      Repertoire projets et remplissage par les trois projets (ogre,arma,xfce)
+
+   34 Geraud Le Falher	2008-04-24
+      nouvelle url pour ogre-tuto dans PKGBUILD
+
+   33 Geraud Le Falher	2008-04-24
+      Nouvelle présentation de ogre-tuto
+
+   32 Geraud Le Falher	2008-04-24
+      Ajout de fichiers issus des sources d'ogre-tuto
+
+   31 Geraud Le Falher	2008-04-24
+      Ajout des classes pour TODO arma jactare
+
+   30 Geraud Le Falher	2008-04-24
+      suppression de fichiers inutiles
+
+   29 Geraud Le Falher	2008-04-24
+      Utilise maintenant les couleurs normales du site
+
+   28 Geraud Le Falher	2008-04-23
+      fix a typo
+
+   27 Geraud Le Falher	2008-04-23
+      Corrections mineures
+
+   26 Geraud Le Falher	2008-04-23
+      Meilleur description de la page, nouvelles du 23/04/08
+      nouvelles en liste
+      suppression des anciennes nouvelles vers les archives
+
+   25 Geraud Le Falher	2008-04-23
+      Ajout d'une page sur les anciennes actualités
+
+   24 Geraud Le Falher	2008-04-23
+      Page de présentation du site et de moi-même
+
+   23 Geraud Le Falher	2008-04-23
+      Une photo de moi
+
+   22 Geraud Le Falher	2008-04-23
+      Cv déplacé dans le reperoire about
+
+   21 Geraud Le Falher	2008-04-23
+      Citation en italique
+
+   20 Geraud Le Falher	2008-04-23
+      Nouvelles catégories dans le menu
+
+   19 Geraud Le Falher	2008-04-23
+      Classe code et center
+
+   18 Geraud Le Falher	2008-04-23
+      Ecriture de la page sur les standards du web
+
+   17 Geraud Le Falher	2008-04-23
+      Miniatures plus compressées
+
+   16 Geraud Le Falher	2008-04-23
+      Images centrées
+
+   15 Geraud Le Falher	2008-04-22
+      Feuille de style reformatée et marge autour des images
+
+   14 Geraud Le Falher	2008-04-22
+      Ajout d'une page de présentation de Xfce accompagnée de captures d'écran.
+
+   13 Geraud Le Falher	2008-04-21
+      Ajout d'un nouveau répertoire et d'une page vide pour faire des test sur CSS
+
+   12 Geraud Le Falher	2008-04-21
+      Cv en pdf supprimé
+
+   11 Geraud Le Falher	2008-04-21
+      Cv comme une image (plus de numéro de tel)
+
+   10 Geraud Le Falher	2008-04-21
+      vim comme generator
+
+    9 Geraud Le Falher	2008-04-21
+      Supprimer meta balise en trop, lien cv vers png
+
+    8 Geraud Le Falher	2008-04-19
+      Update new source with new md5sum
+
+    7 Geraud Le Falher	2008-04-19
+      Ajouter mon cv et rajouter des actualités sur la page d'accueil
+
+    6 Geraud Le Falher	2008-04-18
+      Use the print stylesheet
+
+    5 Geraud Le Falher	2008-04-18
+      Add a link to pdf and txt version of "Immortalité"
+
+    4 Geraud Le Falher	2008-04-18
+      Add a pdf and a txt version of my first short story
+
+    3 Geraud Le Falher	2008-04-18
+      Add a css file for text impression
+
+    2 Geraud Le Falher	2008-04-18
+      Ignore tex file
+
+    1 Geraud Le Falher	2008-04-18
+      Initial commit
+

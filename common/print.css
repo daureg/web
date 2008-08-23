@@ -1,0 +1,40 @@
+body {
+	margin: 0%;
+	background-color: white;
+	color: black;
+	font: 0.8em/1.0em sans-serif;
+}
+p {
+	text-align: justify;
+	text-indent: 3%;
+}
+p:first-letter {
+	font: bold 1.5em serif;
+	color: black;
+	background-color: white;
+}
+
+div.footnote {
+	display: none;
+}
+p.copyright {
+	display: none;
+}
+h1.nouv {
+	font: bold 1.0em/1.3em sans-serif;
+	text-align: center;
+}
+
+#NavBox {
+	display: none;
+}
+li {
+	list-style-type: square;
+}
+a	{
+	background-color: rgb(255,250,245);
+	color: rgb(50,165,230);
+}
+a img {
+	border:0;
+}

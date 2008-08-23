@@ -1,0 +1,114 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# pylint: disable-msg=W0312
+"""Convert a Google sitemap.xml to a XHTML representation"""
+NAME = "sitemap2map.py"
+# 04.05.2008 17:45:55 CEST
+# Géraud Le Falher, <daureg@gmail.com>
+VERSION = "1.0"
+#
+# Copyright (C) 2008 - Géraud Le Falher
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+import sys, os, urllib
+from xml.dom import minidom
+import elementtree.ElementTree as ET
+
+def read_sitemap(url):
+	"""Return a list of URL from the sitemap (google format) of the site url"""
+	#Use http as a default protocol
+	if url[7:].find('://') == -1:
+		url = "http://" + url
+	url += '/sitemap.xml'
+    	try:
+		SITEMAP = minidom.parse(urllib.urlopen(url))
+		URL = SITEMAP.firstChild.getElementsByTagName("url")
+		LOC = []
+		for i in URL:
+			location = i.getElementsByTagName("loc")[0].firstChild.data
+			if location[-1:] == '/':
+				LOC.append(location)
+		return LOC
+    	except (IOError, OSError), strerror:
+		print "Error while opening '%s' : %s" % (url, strerror)
+
+def do_special_hack(string):
+	"""For my site only, remove a part of the string from the title"""
+	return string.replace("GeraudSoft | ", "")
+
+def get_page_desc(url):
+	"""Return the title, the desciption and level from root of the given url"""
+	LEVEL = url.count('/') - 3 
+	if url == "http://geraudsoft.info/":
+		LEVEL += 1
+	sock = urllib.urlopen(url)
+	PAGE = minidom.parse(sock)
+	sock.close
+	TITLE = PAGE.getElementsByTagName("title")[0].firstChild.data.strip()
+	DESC = ""
+	META = PAGE.getElementsByTagName("meta")
+	for i in META:
+		if 'name' in i.attributes.keys():
+			if i.attributes['name'].value == 'description':
+				DESC = i.attributes['content'].value.strip()
+	TITLE = do_special_hack(TITLE)
+	return TITLE, DESC, LEVEL
+
+def mk_link(title, desc, level, url):
+	"""return the proper <li> from all the info of the page"""
+	li = ET.Element("li")
+	h = ET.SubElement(li, "h%d"%level)
+	link = ET.SubElement(h, "a")
+	link.attrib["class"] = "intern"
+	link.attrib["href"] = url.replace("http://geraudsoft.info/", "../")
+	link.text = title
+	p = ET.SubElement(li, "p")
+	p.attrib["class"] = "light"
+	p.text = desc
+	return ET.tostring(li, encoding="UTF-8").split('\n')[1]
+
+def mk_list(li, li_level):
+	print '<div class="map">\n<ul>'
+	stay_to_close = 1
+	for i in range(len(li) - 1):
+		print li[i]
+		if li_level[i] + 1 == li_level[i+1]:
+			print "<li>\n<ul>"
+			stay_to_close += 1
+		if li_level[i] - 1 == li_level[i+1]:
+			print "</ul>\n</li>"
+			stay_to_close -= 1
+	print li[len(li) -1]
+	while stay_to_close > 1:
+		print "</ul>\n</li>"
+		stay_to_close -= 1
+	print "</ul>"
+	print '<p class="credit">Généré automatiquement par <a class="intern" \
+href="../projets/sitemap2map">%s</a> version %s (%s)</p>' \
+			%(NAME,VERSION, os.popen('date +"%x %X"').read().strip())
+	print "</div>"
+
+if __name__ == "__main__":
+	loc = read_sitemap(sys.argv[1])
+	title = ''
+	desc = ''
+	level = ''
+	LI = []
+	LI_LEVEL = []
+	for i in loc:
+		title, desc, level = get_page_desc(i)
+		LI.append(mk_link(title, desc, level, i))
+		LI_LEVEL.append(level)
+	mk_list(LI, LI_LEVEL)

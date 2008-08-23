@@ -1,0 +1,8 @@
+Touches :
+ZQSD : Mouvements
+Bouton gauche : Tir
+R : Recharger
+Echap : Quitter
+F1 : Revenir au menu
+But du jeu :
+Aucun pour l'instant.

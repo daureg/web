@@ -1,0 +1,8 @@
+0.1.0 - 2008-xx-xx :
+	* Try things like Ode or sound support
+0.0.3 - 2008-xx-xx :
+	* Complete all tutorials
+0.0.2 -	2008-xx-xx :
+	* Support Cegui on Windows
+	* x64 on debian
+	* no dot file (like .ogre.log) on windows (change mRessourcePath)

@@ -1,0 +1,8 @@
+For install ogre-tuto, you need scons and several development libraries:
+	ogre3d
+	ois
+	cegui
+
+Once you're in the top-level dir, type scons -H to see the build option.
+A sample scons command would be :
+	scons Prefix=/usr BuildType=release Arch=pentium4 GUI=yes DESTDIR=`pwd`/ogre-tuto install

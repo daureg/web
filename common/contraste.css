@@ -1,0 +1,128 @@
+@import url(main.css);
+body {
+	color : white;
+	background-color : black;
+	line-height : 150%;
+	word-spacing: 0.1em;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+}
+p:first-letter {
+	font: bold 2.0em serif;
+	color: white;
+	background-color: black;
+}
+p.light:first-letter, p.dialogue:first-letter {
+	font: normal 1.5em sans-serif;
+	color: white;
+	background-color: black;
+}
+
+div.menu {
+	background-color: rgb(30,30,30);
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	border: medium solid white;
+}
+
+div.header a {
+	color : white;
+	background-color: rgb(30,30,30);
+}
+div.news h3 {
+	margin-right: 50%;
+	border-bottom: 3px solid white;
+}
+div.remark {
+	background-color: rgb(30,30,30);
+	color : white;
+}
+
+div.important {
+	background-color: rgb(255,85,85);
+	color : white;
+}
+.code {
+	border: medium solid white;
+	background-color: black;
+	color: white;
+}
+a.intern {
+	background-color: black;
+	color: rgb(50,165,230);
+}
+a.intern:visited {
+	background-color: black;
+	color: rgb(170,80,30);
+}
+a.intern:hover {
+	background-color: black;
+	color: red;
+	font-weight: bold;
+}
+a.extern {
+	background-color: black;
+	color: rgb(50,165,230);
+}
+a.extern:visited {
+	background-color: black;
+	color: rgb(170,80,30);
+}
+a.extern:hover {
+	background-color: black;
+	color: red;
+	font-weight: bold;
+}
+a.wikipedia {
+	background-color: black;
+	color: rgb(50,165,230);
+}
+a.wikipedia:visited {
+	background-color: black;
+	color: rgb(170,80,30);
+}
+a.wikipedia:hover {
+	background-color: black;
+	color: red;
+	font-weight: bold;
+}
+
+div.footer {
+	background-color: rgb(30,30,30);
+	color: white;
+	border: medium  solid white;
+}
+div.footer a {
+	background-color: rgb(30,30,30);
+	color: rgb(50,165,230);
+}
+span.wip {
+	color: blue;
+	background-color : black;
+}
+span.fait {
+	color: red;
+	background-color : black;
+}
+h1.nouv {
+	font: bold 2.0em/3.0em sans-serif;
+}
+h2.nouv {
+	font: bold 1.5em/2.0em sans-serif;
+}
+div.map p.credit {
+	font: italic 1.2em sans-serif;
+}
+div.map p.credit:first-letter {
+	font: italic 1.2em sans-serif;
+	color: white;
+	background-color: black;
+}
+div.links {
+	font-size: 1.2em;
+}
+h1.chapitre {
+	font: bold 2.0em/3.0em sans-serif;
+}

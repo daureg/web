@@ -1,0 +1,431 @@
+Index: moc/interface.c
+===================================================================
+--- moc/interface.c	(revision 2094)
++++ moc/interface.c	(working copy)
+@@ -733,7 +733,8 @@
+ 
+ 		iface_set_played_file (file);
+ 		iface_set_played_file_title (curr_file.title);
+-		
++		/* Try to load the lyrics of the new file */	
++		iface_load_lyrics (file);
+ 		/* Silent seeking makes no sense if the playing file has
+ 		 * changed */
+ 		silent_seek_pos = -1;
+@@ -1577,7 +1578,7 @@
+ 	}
+ 	else
+ 		logit ("The server already has my playlist");
+-	
++	iface_load_lyrics (file);
+ 	send_int_to_srv (CMD_PLAY);
+ 	send_str_to_srv (file);
+ 
+@@ -2953,6 +2954,8 @@
+ {
+ 	if (iface_in_help())
+ 		iface_handle_help_key (k);
++	if (iface_in_lyrics())
++		iface_handle_lyrics_key (k);
+ 	else if (iface_in_entry())
+ 		entry_key (k);
+ 	else if (iface_in_theme_menu())
+@@ -3044,6 +3047,9 @@
+ 			case KEY_CMD_HELP:
+ 				iface_switch_to_help ();
+ 				break;
++			case KEY_CMD_LYRICS:
++				iface_switch_to_lyrics ();
++				break;
+ 			case KEY_CMD_HIDE_MESSAGE:
+ 				iface_disable_message ();
+ 				break;
+Index: moc/keys.c
+===================================================================
+--- moc/keys.c	(revision 2094)
++++ moc/keys.c	(working copy)
+@@ -736,6 +736,14 @@
+  		{ KEY_F(10), -1 },
+  		1
+   	},
++	{
++		KEY_CMD_LYRICS,
++		"show_lyrics",
++		"Display lyrics of the current song (if available)",
++		CON_MENU,
++		{ 'L',	-1 },
++		1
++	},
+  	{
+  		KEY_CMD_TOGGLE_PLAYLIST_FULL_PATHS,
+  		"playlist_full_paths",
+Index: moc/keys.h
+===================================================================
+--- moc/keys.h	(revision 2094)
++++ moc/keys.h	(working copy)
+@@ -89,6 +89,7 @@
+ 	KEY_CMD_EXEC10,
+ 	KEY_CMD_TOGGLE_PLAYLIST_FULL_PATHS,
+ 	KEY_CMD_TOGGLE_SOFTMIXER,
++	KEY_CMD_LYRICS,
+ 	KEY_CMD_WRONG
+ };
+ 
+Index: moc/interface_elements.c
+===================================================================
+--- moc/interface_elements.c	(revision 2094)
++++ moc/interface_elements.c	(working copy)
+@@ -56,6 +56,7 @@
+ #include "protocol.h"
+ #include "interface.h"
+ #include "utf8.h"
++#include "lyrics.h"
+ 
+ #define STARTUP_MESSAGE	"Welcome to " PACKAGE_STRING "!"
+ #define HISTORY_SIZE	50
+@@ -130,7 +131,11 @@
+ 	int in_help; /* are we displaying help screen? */
+ 	int too_small; /* is the terminal window too small to display mocp? */
+ 	int help_screen_top; /* first visible line of the help screen. */
+-	
++	int in_lyrics; /* are we displaying lyrics screen? */
++	int lyrics_screen_top; /* first visible line of the lyrics screen. */
++	int lyrics_nb_lines;	/* line number of the current lyrics file. */
++	char **lyrics_array;	/* lyrics of the current song */
++
+ 	struct side_menu menus[3];
+ 	char *layout_fmt;
+ 	int selected_menu; /* which menu is currently selected by the user */
+@@ -871,8 +876,11 @@
+ 
+ 	w->curr_file = NULL;
+ 	w->in_help = 0;
++	w->in_lyrics = 0;
+ 	w->too_small = 0;
+ 	w->help_screen_top = 0;
++	w->lyrics_screen_top = 0;
++	w->lyrics_nb_lines = 0;
+ 	w->layout_fmt = xstrdup (layout_fmt);
+ 
+ 	res = parse_layout (&l, layout_fmt);
+@@ -1626,12 +1634,45 @@
+ 	}
+ }
+ 
+-static void main_win_draw (const struct main_win *w)
++static void main_win_draw_lyrics_screen (const struct main_win *w)
+ {
+ 	int i;
++	int max_lines;
+ 
++	assert (w != NULL);
++	assert (w->in_lyrics);
++
++	max_lines = w->lyrics_screen_top + LINES - 6;
++
++	werase (w->win);
++	wbkgd (w->win, get_color(CLR_BACKGROUND));
++
++	wmove (w->win, 0, 0);
++	if (w->lyrics_screen_top != 0) {
++		wattrset (w->win, get_color(CLR_MESSAGE));
++		xmvwaddstr (w->win, 0, COLS/2 - (sizeof("...MORE...")-1)/2,
++				"...MORE...");
++	}
++	wmove (w->win, 1, 0);
++	wattrset (w->win, get_color(CLR_LEGEND));
++	for (i = w->lyrics_screen_top; i < max_lines && i < w->lyrics_nb_lines; i++) {
++		xwaddstr (w->win, w->lyrics_array[i]);
++	}
++	if (i != w->lyrics_nb_lines) {
++		wattrset (w->win, get_color(CLR_MESSAGE));
++		xmvwaddstr (w->win, LINES-5,
++				COLS/2 - (sizeof("...MORE...")-1)/2,
++				"...MORE...");
++	}
++}
++static void main_win_draw (struct main_win *w)
++{
++	int i;
++
+ 	if (w->in_help)
+ 		main_win_draw_help_screen (w);
++	else if (w->in_lyrics)
++		main_win_draw_lyrics_screen (w);
+ 	else if (w->too_small)
+ 		main_win_draw_too_small_screen (w);
+ 	else {
+@@ -1740,6 +1781,14 @@
+ 	main_win_draw (w);
+ }
+ 
++static void main_win_switch_to_lyrics (struct main_win *w)
++{
++	assert (w != NULL);
++
++	w->in_lyrics = 1;
++	main_win_draw (w);
++}
++
+ static void main_win_create_themes_menu (struct main_win *w)
+ {
+ 	struct window_params p;
+@@ -1791,6 +1840,13 @@
+ 	return w->in_help;
+ }
+ 
++static int main_win_in_lyrics (const struct main_win *w)
++{
++	assert (w != NULL);
++
++	return w->in_lyrics;
++}
++
+ static int main_win_in_plist_menu (const struct main_win *w)
+ {
+ 	assert (w != NULL);
+@@ -1985,6 +2041,31 @@
+ 	main_win_draw (w);
+ }
+ 
++static void main_win_handle_lyrics_key (struct main_win *w,
++		const struct iface_key *k)
++{
++	assert (w != NULL);
++	assert (w->in_lyrics);
++
++	if ((k->type == IFACE_KEY_FUNCTION && (
++					k->key.func == KEY_DOWN
++					|| k->key.func == KEY_NPAGE))
++			|| (k->key.ucs == '\n')) {
++		if (w->lyrics_screen_top + LINES - 5 <= w->lyrics_nb_lines)
++			w->lyrics_screen_top++;
++	}
++	else {
++		if (k->type == IFACE_KEY_FUNCTION && (k->key.func == KEY_UP
++					|| k->key.func == KEY_PPAGE)) {
++			if (w->lyrics_screen_top > 0)
++				w->lyrics_screen_top--;
++		}
++		else if (k->key.func != KEY_RESIZE)
++			w->in_lyrics = 0;
++	}
++
++	main_win_draw (w);
++}
+ static void main_win_swap_plist_items (struct main_win *w, const char *file1,
+ 		const char *file2)
+ {
+@@ -3137,6 +3218,8 @@
+ 		/* Make sure that the next line after we exit will be "clear". */
+ 		putchar ('\n');
+ 	}
++
++	lyrics_cleanup (main_win.lyrics_nb_lines);
+ }
+ 
+ static void iface_refresh_screen ()
+@@ -3648,6 +3731,23 @@
+ 	iface_refresh_screen ();
+ }
+ 
++int iface_in_lyrics ()
++{
++	return main_win_in_lyrics (&main_win);
++}
++
++void iface_switch_to_lyrics ()
++{
++	main_win_switch_to_lyrics (&main_win);
++	iface_refresh_screen ();
++}
++
++void iface_handle_lyrics_key (const struct iface_key *k)
++{
++	main_win_handle_lyrics_key (&main_win, k);
++	iface_refresh_screen ();
++}
++
+ void iface_toggle_layout ()
+ {
+ 	static int curr_layout = 1;
+@@ -3716,3 +3816,13 @@
+ 	if (!options_get_int("UseCursorSelection"))
+ 		curs_set (0);
+ }
++
++void iface_load_lyrics (const char *file)
++{
++	int lines;
++	lyrics_cleanup (main_win.lyrics_nb_lines);
++	main_win.lyrics_array = get_lyrics_text (main_win.win, file, &lines);
++	main_win.lyrics_nb_lines = lines;
++	main_win.lyrics_screen_top = 0;
++	main_win_draw(&main_win);
++}
+Index: moc/interface_elements.h
+===================================================================
+--- moc/interface_elements.h	(revision 2094)
++++ moc/interface_elements.h	(working copy)
+@@ -100,6 +100,9 @@
+ int iface_in_help ();
+ void iface_switch_to_help ();
+ void iface_handle_help_key (const struct iface_key *k);
++int iface_in_lyrics ();
++void iface_switch_to_lyrics ();
++void iface_handle_lyrics_key (const struct iface_key *k);
+ void iface_toggle_layout ();
+ void iface_swap_plist_items (const char *file1, const char *file2);
+ void iface_make_visible (const enum iface_menu menu, const char *file);
+@@ -108,5 +111,6 @@
+ 		const enum file_type type);
+ void iface_temporary_exit ();
+ void iface_restore ();
++void iface_load_lyrics (const char *file);
+ 
+ #endif
+Index: moc/lyrics.c
+===================================================================
+--- moc/lyrics.c	(revision 0)
++++ moc/lyrics.c	(revision 0)
+@@ -0,0 +1,102 @@
++/*
++ * MOC - music on console
++ * Copyright (C) 2004-2005 Damian Pietras <daper@daper.net>
++ *
++ * This program is free software; you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation; either version 2 of the License, or
++ * (at your option) any later version.
++ *
++ */
++
++#ifdef HAVE_CONFIG_H
++# include "config.h"
++#endif
++#include "lyrics.h"
++#include "common.h"
++#include "files.h"
++#include "log.h"
++
++#define LYRICS_LINE_NUMBER	128
++static char *lyrics[LYRICS_LINE_NUMBER];
++
++const unsigned short LINE_SIZE = 128;
++const unsigned short FILENAME_SIZE = 200;
++
++void lyrics_remove_prefix (const char *filename, char *new_name)
++{
++	strncpy(new_name, filename, strlen(filename)-strlen(strrchr(filename, '.')));
++}
++
++void lyrics_cleanup (const unsigned int n)
++{
++	unsigned int i;
++	for (i = 0; i < n && lyrics[i] != NULL; i++)
++		free (lyrics[i]);
++}
++
++char **get_lyrics_text (const WINDOW *w, const char *filename, int *num)
++{
++	char 			*lyrics_filename;
++	char 			*lyrics_line;
++	FILE			*lyrics_file = NULL;
++	unsigned short 	i = 0;
++	int 			x, y, space;
++
++	getmaxyx(w,x,y);
++	if (y > LINE_SIZE)
++		y = LINE_SIZE;
++
++	if (filename == NULL) {
++		lyrics[0] = xmalloc (sizeof(char) * 20); 
++		strncpy (lyrics[0], "No file reading", 20);
++		*num = 1;
++		return lyrics;
++	}
++
++	if (is_url (filename)) {
++		lyrics[0] = xmalloc (sizeof(char) * 30); 
++		strncpy (lyrics[0], "URL lyrics is not supported", 30);
++		*num = 1;
++		return lyrics;
++	}
++
++	lyrics_filename = xmalloc (sizeof(char) * FILENAME_SIZE);
++	memset (lyrics_filename, '\0', FILENAME_SIZE);
++	lyrics_remove_prefix (filename, lyrics_filename);
++
++	lyrics_file = fopen (lyrics_filename, "r");
++	if (lyrics_file != NULL) {
++		lyrics_line = xmalloc (sizeof(char) * LINE_SIZE);
++		while (fgets(lyrics_line, y, lyrics_file) != NULL) {
++			lyrics[i] = xmalloc (sizeof(char) * LINE_SIZE); 
++			if (strlen(lyrics_line) < (y-1)) {
++				space = (y-strlen(lyrics_line))/2;
++				memset(lyrics[i], ' ', space);
++				lyrics[i][space] = '\0';
++				strcat(lyrics[i], lyrics_line);
++			}
++			else {
++				strncpy (lyrics[i], lyrics_line, y-1);
++				lyrics[i][y] = '\0';
++			}
++			i++;
++		}
++		*num = i;
++		fclose (lyrics_file);
++		free (lyrics_line);
++		free (lyrics_filename);
++		return lyrics;
++	}
++	else {
++		lyrics[0] = xmalloc (sizeof(char) * 20); 
++		strncpy (lyrics[0], "No lyrics found !", 20);
++		*num = 1;
++		free (lyrics_filename);
++		return lyrics;
++	}
++	free (lyrics_filename);
++	abort ();
++	return lyrics;
++}
++
+Index: moc/lyrics.h
+===================================================================
+--- moc/lyrics.h	(revision 0)
++++ moc/lyrics.h	(revision 0)
+@@ -0,0 +1,18 @@
++#ifndef  LYRICS_H
++#define  LYRICS_H
++
++#ifdef HAVE_CONFIG_H
++# include "config.h"
++#endif
++#ifdef HAVE_NCURSESW_H
++# include <ncursesw/curses.h>
++#elif HAVE_NCURSES_H
++# include <ncurses.h>
++#elif HAVE_CURSES_H
++# include <curses.h>
++#endif
++
++void lyrics_cleanup (const unsigned int n);
++char **get_lyrics_text (const WINDOW*, const char*, int*);
++
++#endif
+Index: moc/Makefile.am
+===================================================================
+--- moc/Makefile.am	(revision 2094)
++++ moc/Makefile.am	(working copy)
+@@ -56,7 +56,9 @@
+ 	       utf8.c \
+ 	       utf8.h \
+ 	       softmixer.c \
+-	       softmixer.h
++	       softmixer.h \
++		   lyrics.h \
++		   lyrics.c
+ EXTRA_mocp_SOURCES = gnugetopt.h \
+ 		     getopt.c \
+ 		     getopt1.c \
