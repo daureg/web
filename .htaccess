@@ -1,1 +1,2 @@
 ErrorDocument 404 /common/404.xhtml
+DirectoryIndex index.xhtml
