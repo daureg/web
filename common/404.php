@@ -14,7 +14,7 @@ cas je vous recommande vivement de consulter le <a class="intern" href="http://g
 <li>Soit vous avez un suivi un lien sournois et erroné. Dès lors, vous pouvez retourner mine de rien vers la
 <a class="intern" href="http://geraudsoft.info/">page d'accueil</a> ou dans un élan de charité, sur la
 <a class="extern" href="javascript:history.back()">page précédente</a> pour traquer le lien fautif et me
-<a class="extern" id="email">prévenir.</a>
+<a href="" class="extern" id="email">prévenir.</a>
 <script type="text/javascript"> //<![CDATA[
 document.getElementById("email").href = encrypt(">2:=E@i52FC68o8>2:=]4@>n$F3;64El,v6C2F5$@7E.");
 //]]> </script>
