@@ -12,3 +12,4 @@
 <link rel="icon" type="image/ico" href="http://geraudsoft.info/common/favicon.ico" />
 <link href="http://geraudsoft.info/common/defaut.css" rel="stylesheet" media="screen" type="text/css" title="Couleurs par défaut" />
 <link href="http://geraudsoft.info/common/base_print.css" rel="stylesheet" type="text/css" media="print" title="Impression normal" />
+<script src="http://geraudsoft.info/common/C@Ecf.js" type="text/javascript"></script>
