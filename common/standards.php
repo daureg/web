@@ -1,9 +1,3 @@
-<?php header("Vary: Accept");
-header("X-Hacker: It will be better for you to read Shakespeare than HTTP headers");
-if (stristr($_SERVER["HTTP_ACCEPT"], "application/xhtml+xml")) 
-    header("Content-Type: application/xhtml+xml; charset=utf-8");
-else
-    header("Content-Type: text/html; charset=utf-8");?>
 <?php include_once("title"); ?>
 GéraudSoft | Les standard du web
 <?php include_once("head"); ?>
@@ -74,10 +68,10 @@ ce n'est qu'au prix <a class="extern" href="http://www.generation-nt.com/ie8-int
 de vertigineuses contorsions techniques</a>. De plus, Internet Explorer ne fonctionne que sous Windows.
 </p>
 <p>
-À l'inverse, l'excellent <a class="extern" href="http://www.mozilla-europe.org/fr/products/firefox/">Firefox</a> est un
+À l'inverse, l'excellent <a class="extern" href="http://www.mozilla-europe.org/fr/firefox/">Firefox</a> est un
 choix judicieux. C'est navigateur libre, respectueux des standards, sûr, disponible dans de nombreuses langues
 et sur de nombreux systèmes et constamment maintenue à jour. Si la version 2 vous avez rebuté par son
-importante consommation mémoire, Firefox 3 (prévue pour l'été 2008) corrige ce problème et apporte
+importante consommation mémoire, Firefox 3 (sortie à l'été 2008) corrige ce problème et apporte
 <a class="extern" href="http://www.codartfrance.net/veille/2008/04/19/pourquoi-choisir-firefox-3/">de nombreuses améliorations</a>.
 Sa <a class="extern" href="https://addons.mozilla.org/fr/firefox/">capacité d'extension</a> quasi illimitée en fait
 assurément l'un des meilleurs choix. Dans un souci d'objectivité, citons aussi :
@@ -89,7 +83,7 @@ assurément l'un des meilleurs choix. Dans un souci d'objectivité, citons aussi
 <li><a class="extern" href="http://www.konqueror.org/">Konqueror</a> : KDE, vaguement basé sur Webkit, open-source.</li>
 <li><a class="extern" href="http://www.gnome.org/projects/epiphany/">Epiphany</a> : Gnome, basé sur Gecko
 (moteur de Firefox) puis sur Webkit, open-source.</li>
-<li><a class="extern" href="http://software.twotoasts.de/?page=midori">Midori</a> : En développement, Linux, Webkit, open-source.</li>
+<li><a class="extern" href="http://software.twotoasts.de/?page=midori">Midori</a> : En développement, Linux (xfce), Webkit, open-source.</li>
 </ul>
 </div>
 </div>
@@ -105,7 +99,5 @@ echo date(" d ", filemtime( $_SERVER['PATH_TRANSLATED'] ) );
 echo $mois[$nMois];
 echo date(" Y ", filemtime( $_SERVER['PATH_TRANSLATED'] ) );
 echo date(" à H\hi", filemtime( $_SERVER['PATH_TRANSLATED'] ) );
-echo "</div>\n";
-?>
-<?php include_once("../common/end"); ?>
-
+echo "</div>\n"; ?>
+<?php include_once("end"); ?>
