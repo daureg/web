@@ -1,1 +1,1 @@
-ErrorDocument 404 /common/404.php
+ErrorDocument 404 /common/404.xhtml
