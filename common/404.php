@@ -16,7 +16,7 @@ cas je vous recommande vivement de consulter le <a class="intern" href="http://g
 <a class="extern" href="javascript:history.back()">page précédente</a> pour traquer le lien fautif et me
 <a class="extern" id="email">prévenir.</a>
 <script type="text/javascript"> //<![CDATA[
-document.getElementById("email").href = rot47(">2:=E@i52FC68o8>2:=]4@>n$F3;64El,v6C2F5$@7E.");
+document.getElementById("email").href = encrypt(">2:=E@i52FC68o8>2:=]4@>n$F3;64El,v6C2F5$@7E.");
 //]]> </script>
 Évidemment le coupable sera sévèrement châtié et comme tout travail mérite salaire,
 vous serez chaudement récompensé (reste à savoir quand...)</li>

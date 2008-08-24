@@ -1,4 +1,4 @@
-function rot47(str) {
+function encrypt(str) {
 	var texte= "";
 	for (var i=0; i < str.length; i++) {
 		if(str.charCodeAt(i) > 32 && str.charCodeAt(i) < 80)
