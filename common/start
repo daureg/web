@@ -2,7 +2,7 @@
 <body>
 <div class="header">
 	<div class="menu">
-		<a href="http://geraudsoft.info/">Accueil</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/projets">Projets</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/ecrits">Écrits</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/plan">Plan</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/about">À propos</a>
+		<a href="http://geraudsoft.info/">Accueil</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/projets/">Projets</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/ecrits/">Écrits</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/plan/">Plan</a>&nbsp;|&nbsp;<a href="http://geraudsoft.info/about/">À propos</a>
 	</div>
 	<div class="links">
 		Fuyez vers d'autres sites : <a class="extern" href="http://linuxfr.org/pub/">LinuxFr</a>&nbsp;|&nbsp;<a class="extern" href="http://slashdot.org/">Slashdot</a>&nbsp;|&nbsp;<a class="extern" href="http://www.pcinpact.com/">PC INpact</a>&nbsp;|&nbsp;<a class="extern" href="http://www.codinghorror.com/blog/">Coding Horror</a>&nbsp;|&nbsp;<a class="extern" href="http://standblog.org/blog/">Standblog</a>&nbsp;|&nbsp;<a class="extern" href="http://frost.dream.free.fr/">Frostdream</a>
