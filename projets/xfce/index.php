@@ -25,9 +25,9 @@ sur le site officiel.
 Voici maintenant quelques liens pour en apprendre plus sur Xfce et les autres environnements de bureau.
 </p>
 <ul>
-<li>D'autres <a class="extern" href="http://www.xfce.org/about/screenshots">captures d'écran</a> de Xfce</li>
-<li>La <a class="extern" href="http://www.xfce.org/about/tour">présentation de la dernière version</a> sur le site officiel.</li>
-<li><a xml:lang="en" class="wikipedia" href="http://en.wikipedia.org/wiki/Comparison_of_X_Window_System_desktop_environments">
+<li>D'autres <a class="extern" href="http://www.xfce.org/about/screenshots/">captures d'écran</a> de Xfce</li>
+<li>La <a class="extern" href="http://www.xfce.org/about/tour/">présentation de la dernière version</a> sur le site officiel.</li>
+<li><a xml:lang="en" class="wikipedia" href="http://en.wikipedia.org/wiki/Comparison_of_X_Window_System_desktop_environments/">
 Une comparaison</a> (en anglais) des différents environnements de bureau pour Linux sur Wikipedia.</li>
 </ul>
 <p>

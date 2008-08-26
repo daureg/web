@@ -10,11 +10,11 @@ Voici la liste des nouvelles que j'ai écrite : (on constate qu'elle très court
 résume à deux lignes)
 </p>
 <ul>
-<li><a class="intern" href="immor">Immortalité</a> (La première nouvelle que j'ai finie et qui parle d'immortalité.)
+<li><a class="intern" href="immor/">Immortalité</a> (La première nouvelle que j'ai finie et qui parle d'immortalité.)
  : autres versions <a class="intern" href="immor/immor.pdf"> [pdf, 31Ko]</a>, 
 <a class="intern" href="immor/immor.txt">[texte formaté, 8Ko]</a>, 
 <a class="intern" href="immor/immor_plain.txt">[texte brut, 8Ko]</a></li>
-<li><a class="intern" href="feerie">Féerie chevaleresque</a> (Une nouvelle qui parle d'un chevalier délivrant 
+<li><a class="intern" href="feerie/">Féerie chevaleresque</a> (Une nouvelle qui parle d'un chevalier délivrant 
 une fée.) : autres versions <a class="intern" href="feerie/feerie.pdf"> [pdf, 65Ko]</a>, 
 <a class="intern" href="feerie/feerie.txt">[texte formaté, 25Ko]</a>, 
 <a class="intern" href="feerie/feerie_plain.txt">[texte brut, 25Ko]</a></li>

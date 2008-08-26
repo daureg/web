@@ -12,8 +12,8 @@ lire un document sur le contexte du jeu (format : <a class="intern" href="histoi
 <a class="intern" href="histoire.txt">[texte, 2Ko]</a>)
 </p>
 	  <h1>Récupérer la dernière version :</h1>
-	  <a class="intern" href="plagiat">Branche &#147;plagiat&#148;</a> (Version basée sur un exemple du web)<br />
-	  <a class="intern" href="deadline">Branche &#147;deadline&#148;</a> (Version commencée à partir de zéro)
+	  <a class="intern" href="plagiat/">Branche &#147;plagiat&#148;</a> (Version basée sur un exemple du web)<br />
+	  <a class="intern" href="deadline/">Branche &#147;deadline&#148;</a> (Version commencée à partir de zéro)
 	  <h1>Documentation</h1>
 	  <p>     
 <?php

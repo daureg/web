@@ -6,20 +6,20 @@ GeraudSoft | Arma Jactare (plagiat)
 <?php include_once("../../../common/start"); ?> 
 <h2>Récupérer les dernières versions de la branche	&#147;plagiat&#148;:</h2>      
 <ul>
-<li><a class="intern" href="plagiat_1.zip">2007-07-02 18:42 (lundi) [478Ko]</a> : 1er version publique.</li>
-<li><a class="intern" href="plagiat_2.zip">2007-07-12 16:15 (jeudi) [423Ko]</a> : Ajout de son, suppression du FPS, nouvelle police.</li>
-<li><a class="intern" href="plagiat_3.zip">2007-07-19 17:59 (jeudi) [410Ko]</a> : Tir en rafale.</li>
-<li><a class="intern" href="plagiat_4.zip">2007-07-19 20:03 (jeudi) [451Ko]</a> : Ajout d'un arbre, premiers tests sur les packs de munitions.</li> 
+<li>2007-07-02 18:42 (lundi) : 1er version publique.</li>
+<li>2007-07-12 16:15 (jeudi) : Ajout de son, suppression du FPS, nouvelle police.</li>
+<li>2007-07-19 17:59 (jeudi) : Tir en rafale.</li>
+<li>2007-07-19 20:03 (jeudi) : Ajout d'un arbre, premiers tests sur les packs de munitions.</li> 
 </ul>
 <p>
 A partir d'ici, les archives utilisent <a class="extern" href="http://www.7-zip.org/fr/">7-zip</a>
 </p>
 <ul>
-<li><a class="intern" href="plagiat_5.7z">2007-07-21 17:55 (vendredi) [448Ko]</a> : Gestion des packs de munitions, suppression de l'arbre, système de texte revu.</li>
-<li><a class="intern" href="plagiat_6.7z">2007-07-21 19:05 (vendredi) [471KO]</a> : Meilleur gestion des packs de munitions/vie.</li>
-<li><a class="intern" href="plagiat_7.7z">2007-07-23 17:49 (lundi) [405Ko]</a> : Encore des améliorations sur les textes 
+<li>2007-07-21 17:55 (vendredi) : Gestion des packs de munitions, suppression de l'arbre, système de texte revu.</li>
+<li>2007-07-21 19:05 (vendredi) : Meilleur gestion des packs de munitions/vie.</li>
+<li>2007-07-23 17:49 (lundi : Encore des améliorations sur les textes 
 (qui sont visibles dans l'exécutable), travail préparatoire sur le changement d'arme, nouvelle page web.</li>
-<li><a class="intern" href="plagiat_8.7z">2007-07-25 18:34 (mercredi) [408Ko]</a> : Une ébauche de menu au début du jeu.</li>
+<li>2007-07-25 18:34 (mercredi) : Une ébauche de menu au début du jeu.</li>
 <li><a class="intern" href="plagiat_9.7z">2007-08-02 19:48 (jeudi) [409Ko]</a> : Son en rafale qui s'arrête correctement.</li>      
 </ul>
 </div>

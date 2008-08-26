@@ -6,7 +6,7 @@ GeraudSoft | Arma Jactare (deadline)
 <?php include_once("../../../common/start"); ?> 
 <h2>Récupérer les dernières versions de la branche &#147;deadline&#148; :</h2>
 <ul>
-<li><a class="intern" href="dead_1.7z">2007-08-03 18:35 (vendredi) [22Ko]</a> : Version initiale, fichier vide.</li>
+<li>2007-08-03 18:35 (vendredi) : Version initiale, fichier vide.</li>
 <li><a class="intern" href="dead_2.7z">2007-09-18 17:18 (mardi) [30Ko]</a> : Personnages et pièces en cubes, déplacements basiques, 
 munitions basiques, tentative de visée, travail sur les collisions.</li>
 </ul>

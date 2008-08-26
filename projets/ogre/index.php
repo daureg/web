@@ -6,7 +6,7 @@ GeraudSoft | Ogre3d
 <?php include_once("../../common/start"); ?>    
 <p>
 Pour découvrir le moteur <a class="extern" href="http://www.ogre3d.org/">Ogre 3d</a>, j'ai suivi les 
-<a class="extern" href="http://www.ogre3d.org/wiki/index.php/Ogre_Tutorials">tutoriels</a> du wiki officiel. 
+<a class="extern" href="http://www.ogre3d.org/wiki/index.php/Ogre_Tutorials/">tutoriels</a> du wiki officiel. 
 </p>
 <p>La version actuelle est la 0.0.1. Vous pouvez :</p>
 <ul>
