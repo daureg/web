@@ -1,2 +1,2 @@
-ErrorDocument 404 /common/404.xhtml
-DirectoryIndex index.xhtml
+ErrorDocument 404 /common/404.html
+DirectoryIndex index.html

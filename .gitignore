@@ -11,4 +11,4 @@ about/*_log
 bzr/
 .bzr*
 do_it
-*.xhtml
+*.html
