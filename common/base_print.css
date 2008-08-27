@@ -1,31 +1,36 @@
 body {
 	color: black;
-	background-color: white;
+	background-color: transparent;
 	font-size: 12pt;
 	font-family: serif;
 }
 
-div.menu {
-	display: none;
+h1 {
+	font-size: 16pt;
 }
-#habillage {
+h2 {
+	font-size: 14pt;
+}
+.code {
+	font-size: 10pt;
+}
+
+div.header, div.timestamp, div.valid {
 	display: none;
 }
 
 div.content {
 	width: auto;
-	margin: 0 5%;
+	margin: 0 1cm;
 	padding: 0;
 	border: 0;
-	color: black;
-	background: transparent;
+	text-align: justify;
 }
-a:link, a:visited {
+a {
 	color: #520;
 	background: transparent;
-	font-weight: bold;
 	text-decoration: underline;
 }
-div.valid {
-	display: none;
+p {
+	text-indent: 5%;
 }
