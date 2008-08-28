@@ -21,7 +21,7 @@ div.header, div.timestamp, div.valid {
 
 div.content {
 	width: auto;
-	margin: 0 1cm;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	text-align: justify;
@@ -32,5 +32,11 @@ a {
 	text-decoration: underline;
 }
 p {
-	text-indent: 5%;
+	text-indent: 1cm;
+}
+div.copyright {
+	margin-top: 2cm;
+	font-size: 10pt;
+	text-align: center;
+	font-style: italic;
 }
