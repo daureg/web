@@ -75,7 +75,6 @@ h1.chapitre {
 h1.nouv {
 	text-align:center;
 }
-h2.nouv {}
 div.vertical-space {
 	margin-top: 15%;
 	margin-bottom: 15%;
@@ -89,18 +88,6 @@ a img {
 	width: 60%;
 	padding-left: 1%;
 	padding-right: 1%;
-}
-
-#habillage {
-	width: 90%;
-	margin: auto;
-	font-size: 0.8em;
-}
-#habillage label {
-	vertical-align:top;
-}
-
-#habillage select {
 }
 div.map li {
 	list-style:none;

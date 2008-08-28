@@ -1,7 +1,7 @@
 @import url(main.css);
 body {
 	color : rgb(17,17,17);
-	background-color : rgb(255,250,245);
+	background-color : rgb(255,252,247);
 	line-height : 150%;
 	word-spacing: 0.05em;
 	letter-spacing: 1px;
@@ -9,17 +9,17 @@ body {
 p:first-letter {
 	font: bold 1.5em serif;
 	color: rgb(80,80,80);
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 }
 p.light:first-letter, p.dialogue:first-letter {
 	font: normal 1.0em sans-serif;
 	color: rgb(20,20,20);
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 }
 
 div.menu {
 	background-color: rgb(230,210,170);
-	color: rgb(255,250,245);
+	color: rgb(255,252,247);
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
@@ -27,7 +27,7 @@ div.menu {
 }
 
 div.menu a {
-	color : rgb(255,250,245);
+	color : rgb(255,252,247);
 	background-color: rgb(230,210,170);
 }
 
@@ -50,39 +50,39 @@ div.important {
 	color: black;
 }
 a.intern {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(50,165,230);
 }
 a.intern:visited {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(30,100,140);
 }
 a.intern:hover {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(200,80,20);
 }
 a.extern {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(210,180,115);
 }
 a.extern:visited {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(50,165,230);
 }
 a.extern:hover {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(200,80,20);
 }
 a.wikipedia {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(255,125,50);
 }
 a.wikipedia:visited {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(170,80,30);
 }
 a.wikipedia:hover {
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 	color: rgb(200,80,20);
 }
 
@@ -97,11 +97,11 @@ div.footer a {
 }
 span.wip {
 	color: rgb(239,41,41);
-	background-color : rgb(255,250,245);
+	background-color : rgb(255,252,247);
 }
 span.fait {
 	color: rgb(78,154,6);
-	background-color : rgb(255,250,245);
+	background-color : rgb(255,252,247);
 }
 h1.nouv {
 	font: bold 1.5em/2.0em sans-serif;
@@ -116,7 +116,7 @@ div.map p.credit {
 div.map p.credit:first-letter {
 	font: italic 0.8em sans-serif;
 	color: rgb(20,20,20);
-	background-color: rgb(255,250,245);
+	background-color: rgb(255,252,247);
 }
 div.links {
 	font-size: 0.8em;
