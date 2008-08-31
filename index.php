@@ -9,6 +9,20 @@ Bienvenue sur le site de Geraudsoft, découvrez y ce qui a changé depuis votre 
 </p>
 
 <div class="news">
+<h3>31 Août 2008</h3>
+<p>Dernière mise à jour avant un bout de temps puisque c'est bientôt la rentrée (on sait
+jamais, peut-être que vous n'étiez pas encore au courant) :</p>
+<ul>
+<li>Le site a changé d'adresse (et malheureusement elle  est plus longue).</li>
+<li>Toutes les pages sont statiques (on s'en fout) et il n'y a plus de blog (comme j'ai
+jamais rien écrit dedans, ce n'est pas une grosse perte).</li>
+<li>Un nouveau <a class="intern" href="about/cv/">cv</a> et une nouvelle section
+<a class="intern" href="tmp/">divers</a> (dont le titre résume admirablement son manque
+d'ambition et d'organisation).</li>
+</ul>
+</div>
+
+<div class="news">
 <h3>23 Juin 2008</h3>
 <p>
 Je n'en suis pas vraiment satisfait mais maintenant qu'elle est finie, vous pouvez lire ma
