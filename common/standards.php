@@ -2,7 +2,7 @@
 GéraudSoft | Les standard du web
 <?php include_once("head"); ?>
 <meta name="description" content="Présentation des standards du web." />
-<meta name="keywords" xml:lang="fr" content="standards,xhtml,css,xml,atom,ietf,w3c" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,standards,xhtml,css,xml,atom,ietf,w3c" />
 <?php include_once("start"); ?>
 <div>
 <h1>1 - Que sont ces standards du Web ?</h1>

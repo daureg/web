@@ -3,7 +3,7 @@ GeraudSoft | Arma Jactare
 <?php include_once("../../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Les dernières informations 
 sur l'avancement du projet Arma Jactare, un FPS basé sur le Game Engine de Blender." />
-<meta name="keywords" xml:lang="fr" content="blender,jeu,FPS,Arma Jactare" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,blender,jeu,FPS,Arma Jactare" />
 <?php include_once("../../common/start"); ?> 
 <h1>Description</h1>
 <p>Arma Jactare est un projet (abandonné pour ma part) de FPS basé sur le moteur interne

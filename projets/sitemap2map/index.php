@@ -2,7 +2,7 @@
 GeraudSoft | Script sitemap2map
 <?php include_once("../../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Un script qui convertit un fichier sitemap.xml en XHTML" />
-<meta name="keywords" xml:lang="fr" content="python,sitemap,xml,xhtml,google" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,python,sitemap,xml,xhtml,google" />
 <?php include_once("../../common/start"); ?> 
 <p>Vous pouvez télécharger un <a class="intern" href="sitemap2map.python">script python</a>
 qui permet d'extraire d'un fichier sitemap 

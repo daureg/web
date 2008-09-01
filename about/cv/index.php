@@ -2,7 +2,7 @@
 GeraudSoft | CV
 <?php include_once("../../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Mon CV." />
-<meta name="keywords" xml:lang="fr" content="cv" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,cv" />
 <?php include_once("../../common/start"); ?> 
 </div>
 <img class="cv" style="float:right;" src="moi.png" alt="Une photo de moi" />

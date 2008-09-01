@@ -2,7 +2,7 @@
 GeraudSoft | Plan du site
 <?php include_once("../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Le plan des pages du site GeraudSoft" />
-<meta name="keywords" xml:lang="fr" content="plan" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,plan" />
 <?php include_once("../common/start"); ?> 
 <div class="map">
 	<ul>

@@ -2,7 +2,7 @@
 GeraudSoft | Présentation de GeraudSoft
 <?php include_once("../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Présentation du site GeraudSoft et de son auteur." />
-<meta name="keywords" xml:lang="fr" content="about,moi,geraudsoft,site,photo,cv" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,about,moi,geraudsoft,site,photo,cv" />
 <?php include_once("../common/start"); ?> 
 <h2>Le site</h2>
 <p>

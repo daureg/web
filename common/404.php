@@ -2,7 +2,7 @@
 GéraudSoft | Page d'erreur 404
 <?php include_once("head"); ?>
 <meta name="description" content="Cette page vous apprend que vous vous êtes égaré dans les méandres tortueux de ce site." />
-<meta name="keywords" xml:lang="fr" content="erreur,redirection" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,erreur,redirection" />
 <?php include_once("start"); ?>
 <div class="center"><h1>Erreur 404</h1></div>
 <p>Pauvre de vous, vous êtes la victime innocente de la célèbre

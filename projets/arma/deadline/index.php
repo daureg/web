@@ -2,7 +2,7 @@
 GeraudSoft | Arma Jactare (deadline)
 <?php include_once("../../../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Télécharger ici toutes les versions de la branche deadline de Arma Jactare." />
-<meta name="keywords" xml:lang="fr" content="blender,jeu,FPS,Arma Jactare" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,blender,jeu,FPS,Arma Jactare" />
 <?php include_once("../../../common/start"); ?> 
 <h2>Récupérer les dernières versions de la branche &#147;deadline&#148; :</h2>
 <ul>

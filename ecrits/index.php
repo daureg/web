@@ -2,7 +2,7 @@
 GeraudSoft | Divers Écrits
 <?php include_once("../common/head"); ?>
 <meta name="description" content="Une liste de différents textes que j'ai pu écrire au cours du temps." />
-<meta name="keywords" xml:lang="fr" content="page perso,nouvelles" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,page perso,nouvelles" />
 <?php include_once("../common/start"); ?> 
 <h2>Nouvelles</h2>
 <p>

@@ -2,7 +2,7 @@
 GeraudSoft | Divers
 <?php include_once("../common/head"); ?>
 <meta name="description" content="Choses diverses, éphémères ou inclassables." />
-<meta name="keywords" xml:lang="fr" content="page perso" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,page perso" />
 <?php include_once("../common/start"); ?> 
 <p>
 Florilège de choses diverses, éparses, éphémères ou inclassables (une manière

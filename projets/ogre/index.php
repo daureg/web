@@ -2,7 +2,7 @@
 GeraudSoft | Ogre3d
 <?php include_once("../../common/head"); ?>
 <meta name="description" content="Mon (humble) implémentation des tutorials du wiki d'Ogre3d." />
-<meta name="keywords" xml:lang="fr" content="programmation,ogre3d,c++" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,programmation,ogre3d,c++" />
 <?php include_once("../../common/start"); ?>    
 <p>
 Pour découvrir le moteur <a class="extern" href="http://www.ogre3d.org/">Ogre 3d</a>, j'ai suivi les 

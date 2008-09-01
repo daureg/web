@@ -1,7 +1,7 @@
 <?php include_once("../../common/title"); ?>
 GeraudSoft | Immortalité (Février 2006)
 <?php include_once("../../common/head"); ?>
-<meta name="keywords" content="nouvelle,immortalité" />
+<meta name="keywords" content="geraudsoft,nouvelle,immortalité" />
 <meta name="description" content="La première nouvelle que j'ai finie et qui parle d'immortalité." />
 <?php include_once("../../common/start"); ?>
 <h1 class="nouv">Ce qu'il y a avant l'histoire</h1>

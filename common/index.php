@@ -2,7 +2,7 @@
 GéraudSoft | Page d'erreur
 <?php include_once("head"); ?>
 <meta name="description" content="Cette page vous apprend que vous vous êtes égaré dans les méandres tortueux de ce site." />
-<meta name="keywords" xml:lang="fr" content="erreur,redirection" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,erreur,redirection" />
 <?php include_once("start"); ?>
 <p>Il n'y a rien ici, retourner sur la <a href=".." class="intern">page d'accueil</a>.</p>
 </div>

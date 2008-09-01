@@ -1,7 +1,7 @@
 <?php include_once("../../common/title"); ?>
 GeraudSoft | Féerie chevaleresque (Avril 2008)
 <?php include_once("../../common/head"); ?>
-<meta name="keywords" content="nouvelle,chevalier,fee" />
+<meta name="keywords" content="geraudsoft,nouvelle,chevalier,fee" />
 <meta name="description" content="Une nouvelle qui parle d'un chevalier délivrant une fée." />
 <?php include_once("../../common/start"); ?>
 <p>À la lueur de l'aube blafarde, le sinistre manoir qui engendra le plus noir des dragons et la plus pâle des fées projetait une ombre mal définie. Le firmament livide lui-même semblait vouloir s'en éloigner, les nuages filandreux qui l'accompagnaient manifestant une évidente répugnance à survoler ses tours acérées. Une haute grille métallique l'enserrait dans un écrin étincelant et nul arbre rieur, nul flot impétueux, nul animal insouciant ne paraissait l'avoir jamais effleuré de sa présence. Il y régnait une telle désolation que même le spectacle de corps en décomposition sur les pieux alentour apparaissait comme une réjouissance incongrue.</p>

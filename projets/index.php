@@ -2,7 +2,7 @@
 GeraudSoft | Projets
 <?php include_once("../common/head"); ?>
 <meta name="description" content="Regroupement de liens vers mes différents projets, actuels ou passés" />
-<meta name="keywords" xml:lang="fr" content="projets,xfce,ogre,FPS,blender" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,projets,xfce,ogre,FPS,blender" />
 <?php include_once("../common/start"); ?> 
 <h2>Projets</h2>
 <p>

@@ -2,7 +2,7 @@
 GeraudSoft | Anciennes actualités (2006 - 2007)
 <?php include_once("../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Archive des ancienne actualités." />
-<meta name="keywords" xml:lang="fr" content="nouvelles,archives,2006,2007" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,nouvelles,archives,2006,2007" />
 <?php include_once("../common/start"); ?> 
 <div class="news">
 <h3>Août 2007</h3>

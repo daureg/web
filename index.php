@@ -2,7 +2,7 @@
 GeraudSoft | Accueil
 <?php include_once("common/head"); ?>
 <meta name="description" content="Page d'accueil du site personnel de Géraud Le Falher." />
-<meta name="keywords" xml:lang="fr" content="page perso,programmation,ogre3d,c++,xfce,nouvelles,blog" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,page perso,programmation,ogre3d,c++,xfce,nouvelles,blog" />
 <?php include_once("common/start"); ?> 
 <p>
 Bienvenue sur le site de Geraudsoft, découvrez y ce qui a changé depuis votre dernière visite.
@@ -13,7 +13,7 @@ Bienvenue sur le site de Geraudsoft, découvrez y ce qui a changé depuis votre 
 <p>Dernière mise à jour avant un bout de temps puisque c'est bientôt la rentrée (on sait
 jamais, peut-être que vous n'étiez pas encore au courant) :</p>
 <ul>
-<li>Le site a changé d'adresse (et malheureusement elle  est plus longue).</li>
+<li>Le site a changé d'adresse (et malheureusement elle nettement moins explicite).</li>
 <li>Toutes les pages sont statiques (on s'en fout) et il n'y a plus de blog (comme j'ai
 jamais rien écrit dedans, ce n'est pas une grosse perte).</li>
 <li>Un nouveau <a class="intern" href="about/cv/">cv</a> et une nouvelle section

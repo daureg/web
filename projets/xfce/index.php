@@ -2,7 +2,7 @@
 GeraudSoft | Présentation de Xfce
 <?php include_once("../../common/head"); ?>
 <meta name="description" xml:lang="fr" content="Présentation de l'environnement de bureau XFCE." />
-<meta name="keywords" xml:lang="fr" content="xfce,gnome,kde,desktop,open-source,screenshot" />
+<meta name="keywords" xml:lang="fr" content="geraudsoft,xfce,gnome,kde,desktop,open-source,screenshot" />
 <?php include_once("../../common/start"); ?> 
 <p>
 <a class="extern" href="http://www.xfce.org/">Xfce</a> est un environnement de bureau léger pour les systèmes Unix.
