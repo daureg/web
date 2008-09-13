@@ -6,11 +6,13 @@ GeraudSoft | Script sitemap2map
 <?php include_once("../../common/start"); ?> 
 <p>Vous pouvez télécharger un <a class="intern" href="sitemap2map.python">script python</a>
 qui permet d'extraire d'un fichier sitemap 
-<a class="extern" href="http://code.google.com/p/sitemap-generators/">généré</a> par google.</p>
-<p>Sans modification, il ne fonctionnera sans pas pour votre site mais il ne fait 80 lignes de
+<a class="extern" href="http://code.google.com/p/sitemap-generators/">généré</a> par google
+toutes les adresses utiles afin d'en créer une représentation html comme 
+<a href="../../plan/" class="intern">celle-ci.</a></p>
+<p>Sans modification, il ne fonctionnera sans doute pas pour votre site mais il ne fait 80 lignes de
 python, donc cela ne devrait pas être trop dur.</p>
 <p>Exemple d'utilisation :</p>
-<pre class="code">python sitemap2map.py geraudsoft.info</pre>
+<pre class="code">python sitemap2map.py slyxi.xf-s.com</pre>
 </div>
 <div class="footer">
 <?php
