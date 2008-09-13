@@ -40,3 +40,6 @@ div.copyright {
 	text-align: center;
 	font-style: italic;
 }
+div.copyright p {
+	margin: 1pt;
+}
