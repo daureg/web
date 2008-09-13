@@ -110,10 +110,10 @@ h1.nouv {
 h2.nouv {
 	font: bold 1.2em/1.7em sans-serif;
 }
-div.map p.credit {
+div.link-map p.credit {
 	font: italic 0.8em sans-serif;
 }
-div.map p.credit:first-letter {
+div.link-map p.credit:first-letter {
 	font: italic 0.8em sans-serif;
 	color: rgb(20,20,20);
 	background-color: rgb(255,252,247);
