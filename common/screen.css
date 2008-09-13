@@ -124,3 +124,11 @@ div.links {
 h1.chapitre {
 	font: bold 2.0em/3.0em sans-serif;
 }
+div.footer p.light:first-letter {
+	font: normal 1.0em sans-serif;
+	background-color: rgb(230,210,170);
+	color: rgb(17,17,17);
+}
+div.footer p {
+	margin: 1%;
+}

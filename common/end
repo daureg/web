@@ -4,8 +4,10 @@
 		<a href="http://slyxi.xf-s.com/common/standards.html">En savoir plus sur les standards</a>
 	</div>
 	<div class="copyright">
-		Copyright (C) 2006-2008 Géraud Le Falher<br />
-		Ce contenu est mis à disposition sous un contrat <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative Commons</a>.
+		<p class="light">Copyright (C) 2006-2008 <a title="Contactez-moi par email" href="" id="last-email">Géraud Le Falher</a></p>
+		<script type="text/javascript">//<![CDATA[ 
+			document.getElementById("last-email").href = encrypt(">2:=E@i52FC68o8>2:=]4@>n$F3;64El,v6C2F5$@7E."); //]]> </script>
+		<p class="light">Ce contenu est mis à disposition sous un contrat <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Creative Commons.</a></p>
 	</div>
 </div>	
 </body>
