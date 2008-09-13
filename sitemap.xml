@@ -6,12 +6,12 @@
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://slyxi.xf-s.com/</loc>
-  <lastmod>2008-09-01T16:19:44Z</lastmod>
+  <lastmod>2008-09-13T18:17:59Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/about/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:31:13Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -20,18 +20,13 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://slyxi.xf-s.com/about/cv.png</loc>
-  <lastmod>2008-08-23T19:04:28Z</lastmod>
-  <priority>0.5000</priority>
- </url>
- <url>
   <loc>http://slyxi.xf-s.com/about/cv/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/about/cv/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -46,7 +41,7 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/about/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -56,17 +51,17 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/archives/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/archives/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/ecrits/</loc>
-  <lastmod>2008-09-01T16:19:47Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -76,7 +71,7 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/ecrits/feerie/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:12:27Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -96,12 +91,12 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/ecrits/feerie/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/ecrits/immor/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -121,37 +116,42 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/ecrits/immor/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/ecrits/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://slyxi.xf-s.com/index.html</loc>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/plan/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/plan/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/arma/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/arma/deadline/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -161,7 +161,7 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/arma/deadline/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -191,17 +191,17 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/arma/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/arma/plagiat/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/arma/plagiat/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -211,12 +211,12 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/ogre/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -241,7 +241,7 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/ogre/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -266,27 +266,27 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/sitemap2map/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:29:43Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/sitemap2map/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:29:45Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/sitemap2map/sitemap2map.python</loc>
-  <lastmod>2008-08-27T18:56:52Z</lastmod>
+  <lastmod>2008-09-13T18:25:03Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/xfce/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/projets/xfce/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -321,7 +321,7 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/tmp/</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-01T19:11:52Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -341,7 +341,7 @@
  </url>
  <url>
   <loc>http://slyxi.xf-s.com/tmp/index.html</loc>
-  <lastmod>2008-09-01T16:19:48Z</lastmod>
+  <lastmod>2008-09-13T18:18:02Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
